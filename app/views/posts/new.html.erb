@@ -1,9 +1,13 @@
-<div class="launch-box">
+<div class="launch-box span4 offset3 text-center">
 
+<h1> Add your image</h1>
+<br/>
 <%= simple_form_for @post do |f| %>
 
-<%= f.input :title %>
-<%= f.input :description %>
+<%= f.input :title, label: 'Add a title', placeholder: 'Riker, Data, Jordy, Spock, etc.' %>
+<br/>
+<%= f.input :description , label: 'What is going on?', placeholder: 'Riker get\'s excited' %>
+<br/>
 <%= f.submit 'Save', :class =>'btn btn-warning'%>
 
 <% end %>
